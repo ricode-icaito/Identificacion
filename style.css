@@ -1,0 +1,87 @@
+html {
+  height: 500px;
+  width: 960px;
+  background-color: #0238f7;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(https://raed.academy/wp-content/uploads/2020/06/acceso-universal-a-internet-dstNtc.jpg;);
+}
+
+.container {
+  width: 960px;
+  height: 500px;
+  margin-top: 0%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 20%;
+  border-radius: 10%;
+}
+
+h1 {
+  text-align: center;
+  font-family: Comic Sans MS;
+}
+
+h1:hover {
+  background: #576057;
+  color: whitesmoke;
+  border-radius: 80px 80px 0px 0px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+  padding: 10px;
+}
+
+a:hover {
+  color: blue;
+}
+
+img {
+  margin: 10px;
+  padding: 10px;
+}
+
+.float, li {
+  display: inline-flex;
+}
+
+h3 {
+  color: white;
+  margin: 15px;
+}
+
+p {
+  text-align: center;
+  color: #fdd512;
+}
+
+.secc-a {
+  display: inline-flex;
+}
+.secc-e {
+  display: inline-flex;
+}
+.secc-i {
+  display: inline-flex;
+}
+.secc-o {
+  display: inline-flex;
+}
+
+.secc-u {
+  display: inline-flex;
+}
+
+footer {
+  margin-left: 100px;
+}
+
+footer:hover {
+  color: red;
+}
