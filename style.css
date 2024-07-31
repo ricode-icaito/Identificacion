@@ -51,14 +51,9 @@ img {
   display: inline-flex;
 }
 
-h3 {
-  color: white;
-  margin: 15px;
-}
-
-p {
-  text-align: center;
+h2 {
   color: #fdd512;
+  margin: 15px;
 }
 
 .secc-a {
@@ -78,10 +73,19 @@ p {
   display: inline-flex;
 }
 
+.secc-aa {
+  display: inline-flex;
+}
+
+.secc-ee {
+  display: inline-flex;
+}
+
 footer {
   margin-left: 100px;
 }
 
 footer:hover {
+  background: green;
   color: red;
 }
