@@ -1,91 +1,246 @@
 html {
-  height: 500px;
-  width: 960px;
+  height: auto;
   background-color: #0238f7;
 }
 
 body {
   margin: 0;
   padding: 0;
-  background-image: url(https://raed.academy/wp-content/uploads/2020/06/acceso-universal-a-internet-dstNtc.jpg;);
+  background-image: url(https://raed.academy/wp-content/uploads/2020/06/acceso-universal-a-internet-dstNtc.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
 }
 
 .container {
-  width: 960px;
-  height: 500px;
-  margin-top: 0%;
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-bottom: 20%;
-  border-radius: 10%;
+  width: 80%; /* Aumenté un poco más el ancho relativo */
+  max-width: 768px; /* Reduje el ancho máximo para simular pantallas más pequeñas por defecto */
+  margin: 5px auto; /* Reduje aún más el margen vertical */
+  border-radius: 2%; /* Reduje el radio del borde */
+  padding: 10px; /* Reduje el padding */
+  box-sizing: border-box;
 }
 
 h1 {
   text-align: center;
-  font-family: Comic Sans MS;
+  font-family: "Comic Sans MS", cursive;
+  font-size: 1.4em; /* Reduje significativamente el tamaño del título */
+  margin-bottom: 5px; /* Reduje el margen inferior del título */
 }
 
 h1:hover {
   background: #576057;
   color: whitesmoke;
-  border-radius: 80px 80px 0px 0px;
+  border-radius: 40px 40px 0px 0px; /* Reduje el radio del borde en hover */
 }
 
-a {
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px; /* Reduje el margen inferior del header */
+  padding: 5px 0; /* Reduje el padding vertical del header */
+}
+
+header > a:first-child {
+  flex-basis: 100%;
+  text-align: center;
+  margin-bottom: 3px; /* Reduje el margen inferior de la imagen de perfil */
+}
+
+header > a:first-child img {
+  width: 30%; /* Reduje aún más el ancho inicial de la imagen de perfil */
+  max-width: 90px; /* Reduje el ancho máximo de la imagen de perfil */
+  height: auto;
+  margin: 3px auto;
+  display: block;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+nav a {
   text-decoration: none;
   color: white;
-  margin: 10px;
-  padding: 10px;
+  margin: 2px; /* Reduje aún más el margen de los enlaces de navegación */
+  padding: 4px 6px; /* Reduje aún más el padding de los enlaces de navegación */
+  border-radius: 2px;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-size: 0.75em; /* Reduje significativamente el tamaño de la fuente de los enlaces */
 }
 
-a:hover {
+nav a:hover {
   color: blue;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 img {
-  margin: 10px;
-  padding: 10px;
+  max-width: 80%; /* Reduje el ancho máximo de las imágenes por defecto */
+  height: auto;
+  margin: 2px; /* Reduje aún más el margen de las imágenes */
+  padding: 2px; /* Reduje aún más el padding de las imágenes */
 }
 
-.float, li {
-  display: inline-flex;
+.float,
+li {
+  display: inline-block;
+  margin: 2px; /* Reduje aún más el margen */
+  font-size: 0.8em; /* Reduje el tamaño de la fuente de los elementos inline-block */
 }
 
 h2 {
   color: #fdd512;
-  margin: 15px;
+  margin: 8px 0 3px 0; /* Reduje los márgenes del título de la sección */
+  text-align: center;
+  font-size: 1em; /* Reduje el tamaño del título de la sección */
 }
 
-.secc-a {
-  display: inline-flex;
-}
-.secc-e {
-  display: inline-flex;
-}
-.secc-i {
-  display: inline-flex;
-}
-.secc-o {
-  display: inline-flex;
-}
-
-.secc-u {
-  display: inline-flex;
-}
-
-.secc-aa {
-  display: inline-flex;
-}
-
+.secc-a,
+.secc-e,
+.secc-i,
+.secc-o,
+.secc-u,
+.secc-aa,
 .secc-ee {
-  display: inline-flex;
+  display: block;
+  margin: 5px 0; /* Reduje aún más el margen vertical entre secciones */
+  padding: 8px; /* Reduje aún más el padding dentro de las secciones */
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  font-size: 0.8em; /* Reduje significativamente el tamaño de la fuente dentro de las secciones */
+}
+
+.secc-ee ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.secc-ee li {
+  margin: 2px 0; /* Reduje aún más el margen vertical de los elementos de la lista */
+}
+
+.secc-ee a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 4px 8px; /* Reduje aún más el padding de los enlaces de contacto */
+  border-radius: 2px;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-size: 0.75em; /* Reduje significativamente el tamaño de la fuente de los enlaces de contacto */
+}
+
+.secc-ee a:hover {
+  color: blue;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 footer {
-  margin-left: 100px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 6px; /* Reduje aún más el padding del pie de página */
+  background-color: #333;
+  color: white;
+  border-radius: 2px;
+  margin-top: 8px; /* Reduje el margen superior del pie de página */
+  font-size: 0.7em; /* Reduje significativamente el tamaño de la fuente del pie de página */
 }
 
 footer:hover {
   background: green;
   color: red;
+}
+
+/* Media Query para pantallas más pequeñas (ej. tablets) */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.2em;
+  }
+
+  header {
+    padding: 4px 0;
+    margin-bottom: 8px;
+  }
+
+  header > a:first-child img {
+    width: 40%;
+    max-width: 70px;
+  }
+
+  nav a {
+    margin: 1px;
+    padding: 3px 5px;
+    font-size: 0.7em;
+  }
+
+  h2 {
+    font-size: 0.9em;
+    margin: 6px 0 2px 0;
+  }
+
+  .secc-a,
+  .secc-e,
+  .secc-i,
+  .secc-o,
+  .secc-u,
+  .secc-aa,
+  .secc-ee {
+    padding: 6px;
+    margin: 4px 0;
+    font-size: 0.75em;
+  }
+
+  .secc-ee a {
+    padding: 3px 6px;
+    font-size: 0.7em;
+  }
+
+  footer {
+    font-size: 0.65em;
+    padding: 4px;
+    margin-top: 6px;
+  }
+}
+
+/* Media Query para pantallas aún más pequeñas (ej. móviles) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1em;
+  }
+
+  nav a {
+    font-size: 0.65em;
+    padding: 2px 4px;
+  }
+
+  h2 {
+    font-size: 0.8em;
+  }
+
+  .secc-a,
+  .secc-e,
+  .secc-i,
+  .secc-o,
+  .secc-u,
+  .secc-aa,
+  .secc-ee {
+    padding: 4px;
+    margin: 3px 0;
+    font-size: 0.7em;
+  }
+
+  .secc-ee a {
+    font-size: 0.65em;
+    padding: 2px 5px;
+  }
+
+  footer {
+    font-size: 0.6em;
+  }
 }
